@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#795548"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/geography" />
+
+        <TextView
+            android:text="Test Your Geography Knowlegde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Type Your Name Here"
+            android:inputType="textCapWords"
+            android:onClick="clear"
+            android:textColor="#000000" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="1. Smallest Country in the World?"
+        android:textColor="#000000"/>
+
+        <RadioGroup
+        android:id="@+id/radiogroup_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_1a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nauru" />
+        <RadioButton
+            android:id="@+id/radio_1b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vatican"/>
+
+        <RadioButton
+            android:id="@+id/radio_1c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Japan" />
+        <RadioButton
+            android:id="@+id/radio_1d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Malaysia"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Country With 12 Timezones?"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
+    <RadioGroup
+        android:id="@+id/radiogroup_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_2a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Russia"/>
+        <RadioButton
+            android:id="@+id/radio_2b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="France" />
+
+        <RadioButton
+            android:id="@+id/radio_2c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="US" />
+
+        <RadioButton
+            android:id="@+id/radio_2d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="China" />
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="3. Biggest Continent by Area"
+            android:textColor="#000000" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_3a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Australia" />
+
+        <RadioButton
+            android:id="@+id/radio_3b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Europe" />
+
+        <RadioButton
+            android:id="@+id/radio_3c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asia"
+            />
+        <RadioButton
+            android:id="@+id/radio_3d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="South America"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.Continents that form a mirror image of each other"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radio_4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="North America, South America"/>
+        <RadioButton
+            android:id="@+id/radio_4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Africa, South America"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. The busiest  sea route is "
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_5a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Mediterranean Red-Sea Route"/>
+        <RadioButton
+            android:id="@+id/radio_5b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The South Atlantic Route" />
+
+        <RadioButton
+            android:id="@+id/radio_5c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Pacific Route"
+            />
+        <RadioButton
+            android:id="@+id/radio_5d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="The North Atlantic Route"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. Country with population over billion?"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkbox_6a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Africa" />
+        <CheckBox
+            android:id="@+id/checkbox_6b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canada" />
+        <CheckBox
+            android:id="@+id/checkbox_6c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Russia" />
+        <CheckBox
+            android:id="@+id/checkbox_6d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India" />
+        <CheckBox
+            android:id="@+id/checkbox_6e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="China"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7. The Countries with same number of timezones?"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_7a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="US" />
+
+        <CheckBox
+            android:id="@+id/checkbox_7b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Korea" />
+        <CheckBox
+            android:id="@+id/checkbox_7c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="China" />
+        <CheckBox
+            android:id="@+id/checkbox_7d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Russia" />
+        <CheckBox
+            android:id="@+id/checkbox_7e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Newzealand"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="8. This (Country)"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/blank_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/text_view_8"
+                android:inputType="text"
+                android:maxLength="5"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_toRightOf="@id/blank_8"
+                android:text="is largest greenhouse gas emissioner."
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+         <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="submitQuiz"
+                android:text="submit quiz"/>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:onClick="resetQuiz"
+            android:text="reset"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
